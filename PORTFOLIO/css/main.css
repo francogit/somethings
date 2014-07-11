@@ -190,9 +190,8 @@ body {
 }
 
 #overlay img {
-    margin-top: 10%; 
-    max-width: 500px;
-    max-width:  500px;
+    margin-top: 150px; 
+    max-width: 200px;
 }
 
 #overlay p {

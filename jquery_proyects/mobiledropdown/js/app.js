@@ -10,7 +10,7 @@ $("#menu a").each(function(){
   var $anchor = $(this);
   //Create an option
   var $option = $("<option></option>");
-
+  
   //Deal with selected options depending on current page
   if($anchor.parent().hasClass("selected")) {
     $option.prop("selected", true);
@@ -21,16 +21,11 @@ $("#menu a").each(function(){
   $option.text($anchor.text());
   //append option to select
   $select.append($option);
+     
 });
 var $button = $("<button>GO</button>");
-$("#menu").append($button);
 
-$button.click(function(){
-    $select.val();
-
-//Bind change listener to the select
 $select.change(function(){
-  //Go to select's location
   window.location = $select.val();
 });
 
